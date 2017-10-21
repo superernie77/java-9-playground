@@ -19,18 +19,27 @@ public class NewStreamFeaturesTest {
         Assert.assertTrue( max == 99);
     }
 
+    /**
+     * Limit the stream with a while construct
+     */
     @Test
     public void testTakeWhile(){
         List<String> results = Stream.of("a", "b", "c", "test", "d").takeWhile(s -> !s.equals("test")).collect(Collectors.toList());
         Assert.assertEquals(results.get(2) , "c");
     }
 
+    /**
+     * Skipping elements with a while construct
+     */
     @Test
     public void testDropWhile(){
         List<String> results = Stream.of("a", "b", "c", "test", "d").dropWhile(s -> !s.equals("test")).collect(Collectors.toList());
         Assert.assertEquals(results.get(1) , "d");
     }
 
+    /**
+     * Create stream from a null value
+     */
     @Test
     public void testOfNullable(){
         long result = Stream.ofNullable(null).count();
