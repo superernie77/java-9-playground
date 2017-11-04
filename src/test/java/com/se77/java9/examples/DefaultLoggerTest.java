@@ -14,13 +14,12 @@ public class DefaultLoggerTest {
         boolean debugEnabled = LOG.isLoggable(System.Logger.Level.DEBUG);
         LOG.log(System.Logger.Level.INFO, "Debug enabled: "+debugEnabled);
 
+        // this prints nothing
         LOG.log(System.Logger.Level.DEBUG,"my debug log message");
 
         LOG.log(System.Logger.Level.ERROR,"my error log message");
 
         LOG.log(System.Logger.Level.INFO,"my info log message");
-
-        System.LoggerFinder finder = System.LoggerFinder.getLoggerFinder();
 
     }
 }
