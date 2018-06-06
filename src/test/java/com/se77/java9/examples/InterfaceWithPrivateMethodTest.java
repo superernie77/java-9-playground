@@ -1,7 +1,7 @@
 package com.se77.java9.examples;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 public class InterfaceWithPrivateMethodTest {
 
@@ -9,6 +9,6 @@ public class InterfaceWithPrivateMethodTest {
     public void testInterfaceWithPrivateMethod(){
         InterfaceWithPrivateMethod greeter = new Greeter();
 
-        Assert.assertTrue(greeter.getGreeting("Ernie").equals("Hello Ernie!"));
+        assertTrue(greeter.getGreeting("Ernie").equals("Hello Ernie!"));
     }
 }

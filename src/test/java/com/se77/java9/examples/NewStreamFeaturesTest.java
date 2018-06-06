@@ -1,7 +1,7 @@
 package com.se77.java9.examples;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -16,7 +16,7 @@ public class NewStreamFeaturesTest {
     @Test
     public void testIterate(){
         int max = IntStream.iterate( 0 , i -> i <100 , i -> ++i).max().getAsInt();
-        Assert.assertTrue( max == 99);
+        assertTrue( max == 99);
     }
 
     /**
@@ -25,7 +25,7 @@ public class NewStreamFeaturesTest {
     @Test
     public void testTakeWhile(){
         List<String> results = Stream.of("a", "b", "c", "test", "d").takeWhile(s -> !s.equals("test")).collect(Collectors.toList());
-        Assert.assertEquals(results.get(2) , "c");
+        assertEquals(results.get(2) , "c");
     }
 
     /**
@@ -34,7 +34,7 @@ public class NewStreamFeaturesTest {
     @Test
     public void testDropWhile(){
         List<String> results = Stream.of("a", "b", "c", "test", "d").dropWhile(s -> !s.equals("test")).collect(Collectors.toList());
-        Assert.assertEquals(results.get(1) , "d");
+        assertEquals(results.get(1) , "d");
     }
 
     /**
@@ -43,7 +43,7 @@ public class NewStreamFeaturesTest {
     @Test
     public void testOfNullable(){
         long result = Stream.ofNullable(null).count();
-        Assert.assertEquals(result , 0);
+        assertEquals(result , 0);
     }
 }
 

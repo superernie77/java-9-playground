@@ -1,6 +1,6 @@
 package com.se77.java9.examples;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 import java.util.stream.Collectors;

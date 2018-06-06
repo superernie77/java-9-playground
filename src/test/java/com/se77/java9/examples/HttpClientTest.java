@@ -1,9 +1,7 @@
 package com.se77.java9.examples;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-import java.net.URI;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 public class HttpClientTest {
 
@@ -15,6 +13,6 @@ public class HttpClientTest {
 
         String result = myWrapper.getContent("http://www.google.de");
 
-        Assert.assertTrue(result != null);
+        assertTrue(result != null);
     }
 }
