@@ -1,4 +1,4 @@
-https://travis-ci.com/superernie77/java-9-playground.svg?branch=master
+[![Build Status](https://travis-ci.com/superernie77/java-9-playground.svg?branch=master)](https://travis-ci.com/superernie77/java-9-playground)
 
 # java-9-playground
 
