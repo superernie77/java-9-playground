@@ -1,3 +1,5 @@
+https://travis-ci.com/superernie77/java-9-playground.svg?branch=master
+
 # java-9-playground
 
 Collection of JUnit 5 Tests showing new language features and APIs of Java 9
