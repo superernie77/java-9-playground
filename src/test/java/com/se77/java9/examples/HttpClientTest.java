@@ -12,11 +12,11 @@ public class HttpClientTest {
 	// --add-modules jdk.incubator.hhtpclient
 //    @Test
 //    @Disabled
-//    public void getGooglePage() throws Exception {
+    public void getGooglePage() throws Exception {
 //        HttpClientWrapper myWrapper = new HttpClientWrapper();
 //
 //        String result = myWrapper.getContent("http://www.google.de");
 //
 //        assertTrue(result != null);
-//    }
+    }
 }
