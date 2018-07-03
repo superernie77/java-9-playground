@@ -1,6 +1,8 @@
 package com.se77.java9.examples;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class HttpClientTest {
@@ -9,6 +11,7 @@ public class HttpClientTest {
     // This is what needs to be added to the java command
 	// --add-modules jdk.incubator.hhtpclient
     @Test
+    @Disabled
     public void getGooglePage() throws Exception {
         HttpClientWrapper myWrapper = new HttpClientWrapper();
 
